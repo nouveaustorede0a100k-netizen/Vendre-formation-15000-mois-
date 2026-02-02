@@ -36,15 +36,12 @@ export default async function SuiviPage() {
 
   let totalSeconds = 0;
   for (const row of progressRows ?? []) {
-    const r = row as {
-      video_progress_seconds: number;
-      is_completed: boolean;
-      lessons?: { duration_seconds: number | null } | null;
-    };
-    if (r.is_completed && r.lessons?.duration_seconds != null) {
-      totalSeconds += r.lessons.duration_seconds;
+    const lessonData = Array.isArray(row.lessons) ? row.lessons[0] : row.lessons;
+    const duration = lessonData?.duration_seconds ?? 0;
+    if (row.is_completed && duration > 0) {
+      totalSeconds += duration;
     } else {
-      totalSeconds += r.video_progress_seconds ?? 0;
+      totalSeconds += row.video_progress_seconds ?? 0;
     }
   }
   const hoursSpent = Math.round((totalSeconds / 3600) * 10) / 10;
