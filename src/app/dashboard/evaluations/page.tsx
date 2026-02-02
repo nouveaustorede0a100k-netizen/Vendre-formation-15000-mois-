@@ -34,6 +34,7 @@ export default async function EvaluationsPage() {
       <div className="mt-8 space-y-4">
         {evaluations?.map((ev) => {
           const result = resultsByEval.get(ev.id);
+          const module = Array.isArray(ev.modules) ? ev.modules[0] : ev.modules;
           return (
             <div
               key={ev.id}
@@ -46,7 +47,7 @@ export default async function EvaluationsPage() {
                 <div>
                   <h3 className="font-bold text-[#111827]">{ev.title}</h3>
                   <p className="mt-1 text-sm text-[#6B7280]">
-                    Module {ev.modules?.module_number} — {ev.modules?.title}
+                    Module {module?.module_number} — {module?.title}
                   </p>
                   {ev.description && (
                     <p className="mt-2 text-sm text-[#374151]">{ev.description}</p>
