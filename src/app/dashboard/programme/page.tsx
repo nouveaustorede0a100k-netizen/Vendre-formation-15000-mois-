@@ -34,7 +34,7 @@ export default async function ProgrammePage() {
             className="rounded-xl border border-[#E5E7EB] bg-white p-6 shadow-sm"
           >
             <div className="flex items-start gap-4">
-              <div className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full bg-[#2563EB] text-sm font-bold text-white">
+              <div className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full bg-primary text-sm font-bold text-white">
                 {mod.module_number}
               </div>
               <div className="min-w-0 flex-1">
@@ -47,7 +47,7 @@ export default async function ProgrammePage() {
                     <li key={lesson.id}>
                       <Link
                         href={`/dashboard/module/${mod.id}/lesson/${lesson.id}`}
-                        className="flex items-center gap-2 text-[15px] text-[#374151] hover:text-[#2563EB]"
+                        className="flex items-center gap-2 text-[15px] text-[#374151] hover:text-primary"
                       >
                         <FileText className="h-4 w-4 flex-shrink-0" />
                         {lesson.title}

@@ -39,7 +39,7 @@ export function LessonTabs({
             className={cn(
               "border-b-2 pb-3 text-sm font-medium transition-colors",
               active === tab.id
-                ? "border-[#2563EB] text-[#2563EB]"
+                ? "border-primary text-primary"
                 : "border-transparent text-[#6B7280] hover:text-[#111827]"
             )}
           >
@@ -94,7 +94,7 @@ export function LessonTabs({
                       href={r.file_url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[#2563EB] hover:underline"
+                      className="text-primary hover:underline"
                     >
                       {r.title}
                     </a>

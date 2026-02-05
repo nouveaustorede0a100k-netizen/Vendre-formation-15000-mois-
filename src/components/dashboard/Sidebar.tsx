@@ -37,7 +37,7 @@ export function Sidebar() {
   return (
     <aside className="flex h-full w-[260px] flex-shrink-0 flex-col border-r border-[#E5E7EB] bg-white">
       <div className="flex items-center gap-2 p-6">
-        <div className="flex h-10 w-10 items-center justify-center rounded-[10px] bg-[#2563EB] text-lg font-bold text-white">
+        <div className="flex h-10 w-10 items-center justify-center rounded-[10px] bg-primary text-lg font-bold text-white">
           IA
         </div>
         <div>
@@ -57,7 +57,7 @@ export function Sidebar() {
               className={cn(
                 "flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-colors",
                 isActive
-                  ? "border-l-[3px] border-[#2563EB] bg-[#EFF6FF] text-[#2563EB]"
+                  ? "border-l-[3px] border-primary bg-primary-light text-primary"
                   : "text-[#374151] hover:bg-[#F3F4F6]"
               )}
             >

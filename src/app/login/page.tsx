@@ -35,7 +35,7 @@ export default function LoginPage() {
     <div className="flex min-h-screen flex-col items-center justify-center bg-[#F9FAFB] px-4">
       <div className="w-full max-w-md rounded-xl border border-[#E5E7EB] bg-white p-8 shadow-sm">
         <Link href="/" className="mb-6 inline-flex items-center gap-2">
-          <div className="flex h-10 w-10 items-center justify-center rounded-[10px] bg-[#2563EB] text-lg font-bold text-white">
+          <div className="flex h-10 w-10 items-center justify-center rounded-[10px] bg-primary text-lg font-bold text-white">
             AI
           </div>
           <span className="font-semibold text-[#111827]">BuildMaster</span>
@@ -60,7 +60,7 @@ export default function LoginPage() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              className="mt-1 w-full rounded-xl border border-[#E5E7EB] px-4 py-3 text-[#111827] focus:border-[#2563EB] focus:outline-none focus:ring-1 focus:ring-[#2563EB]"
+              className="mt-1 w-full rounded-xl border border-[#E5E7EB] px-4 py-3 text-[#111827] focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
               placeholder="vous@exemple.com"
             />
           </div>
@@ -74,7 +74,7 @@ export default function LoginPage() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
-              className="mt-1 w-full rounded-xl border border-[#E5E7EB] px-4 py-3 text-[#111827] focus:border-[#2563EB] focus:outline-none focus:ring-1 focus:ring-[#2563EB]"
+              className="mt-1 w-full rounded-xl border border-[#E5E7EB] px-4 py-3 text-[#111827] focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
             />
           </div>
           <Button type="submit" variant="primary" size="md" className="w-full" disabled={loading}>
@@ -83,7 +83,7 @@ export default function LoginPage() {
         </form>
         <p className="mt-6 text-center text-sm text-[#6B7280]">
           Pas encore de compte ?{" "}
-          <Link href="/register" className="font-medium text-[#2563EB] hover:underline">
+          <Link href="/register" className="font-medium text-primary hover:underline">
             S&apos;inscrire
           </Link>
         </p>

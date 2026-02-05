@@ -69,7 +69,7 @@ export function BookingForm() {
           value={name}
           onChange={(e) => setName(e.target.value)}
           required
-          className="mt-1 w-full rounded-xl border border-[#E5E7EB] px-4 py-2 text-[#111827] focus:border-[#2563EB] focus:outline-none focus:ring-1 focus:ring-[#2563EB]"
+          className="mt-1 w-full rounded-xl border border-[#E5E7EB] px-4 py-2 text-[#111827] focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
           placeholder="Votre nom"
         />
       </div>
@@ -83,7 +83,7 @@ export function BookingForm() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
-          className="mt-1 w-full rounded-xl border border-[#E5E7EB] px-4 py-2 text-[#111827] focus:border-[#2563EB] focus:outline-none focus:ring-1 focus:ring-[#2563EB]"
+          className="mt-1 w-full rounded-xl border border-[#E5E7EB] px-4 py-2 text-[#111827] focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
           placeholder="votre@email.com"
         />
       </div>
@@ -96,7 +96,7 @@ export function BookingForm() {
           type="tel"
           value={phone}
           onChange={(e) => setPhone(e.target.value)}
-          className="mt-1 w-full rounded-xl border border-[#E5E7EB] px-4 py-2 text-[#111827] focus:border-[#2563EB] focus:outline-none focus:ring-1 focus:ring-[#2563EB]"
+          className="mt-1 w-full rounded-xl border border-[#E5E7EB] px-4 py-2 text-[#111827] focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
           placeholder="06 12 34 56 78"
         />
       </div>
@@ -109,7 +109,7 @@ export function BookingForm() {
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           rows={3}
-          className="mt-1 w-full rounded-xl border border-[#E5E7EB] px-4 py-2 text-[#111827] focus:border-[#2563EB] focus:outline-none focus:ring-1 focus:ring-[#2563EB]"
+          className="mt-1 w-full rounded-xl border border-[#E5E7EB] px-4 py-2 text-[#111827] focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
           placeholder="Votre question ou objet de l'appel..."
         />
       </div>

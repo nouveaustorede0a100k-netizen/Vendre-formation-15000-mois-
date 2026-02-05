@@ -62,7 +62,7 @@ export default async function SuiviPage() {
             </span>
             <span
               className={`font-bold ${
-                progressPercent === 0 ? "text-[#EF4444]" : "text-[#2563EB]"
+                progressPercent === 0 ? "text-[#EF4444]" : "text-primary"
               }`}
             >
               {progressPercent}%
@@ -70,7 +70,7 @@ export default async function SuiviPage() {
           </div>
           <div className="mt-2 h-3 overflow-hidden rounded-full bg-[#E5E7EB]">
             <div
-              className="h-full rounded-full bg-[#2563EB] transition-all"
+              className="h-full rounded-full bg-primary transition-all"
               style={{ width: `${progressPercent}%` }}
             />
           </div>

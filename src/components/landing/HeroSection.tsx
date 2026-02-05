@@ -4,15 +4,15 @@ import { Button } from "@/components/ui/Button";
 
 export function HeroSection() {
   return (
-    <section className="bg-white px-4 py-24 sm:px-6 lg:px-8">
+    <section className="bg-gradient-to-br from-[#EFF6FF] to-[#EDE9FE] px-4 py-24 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-4xl text-center">
-        <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-[#F3F4F6] px-4 py-2 text-sm font-medium text-[#374151]">
+        <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-white/80 px-4 py-2 text-sm font-medium text-primary">
           <Sparkles className="h-4 w-4" />
           Nouvelle ère du développement
         </div>
         <h1 className="text-4xl font-extrabold tracking-tight text-[#111827] sm:text-5xl lg:text-[56px]">
           Créez des Applications et des SaaS avec l&apos;
-          <span className="text-[#2563EB]">IA</span>
+          <span className="text-primary">IA</span>
         </h1>
         <p className="mx-auto mt-6 max-w-[640px] text-lg text-[#6B7280]">
           Maîtrisez les outils et techniques pour construire des produits numériques

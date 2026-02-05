@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/Button";
 
 export function CTASection() {
   return (
-    <section className="bg-[#111827] px-4 py-20 sm:px-6 lg:px-8">
+    <section className="bg-primary-dark-bg px-4 py-20 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-3xl text-center">
         <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
           Prêt à transformer votre carrière ?

@@ -22,7 +22,7 @@ export function ModuleCard({
 }: ModuleCardProps) {
   return (
     <div className="rounded-xl border border-[#E5E7EB] bg-white shadow-sm overflow-hidden">
-      <div className="bg-gradient-to-br from-[#2563EB] to-[#3B82F6] px-6 py-8 text-white rounded-t-xl relative">
+      <div className="bg-gradient-to-br from-primary to-primary-dark px-6 py-8 text-white rounded-t-xl relative">
         <h3 className="text-lg font-bold">Module {moduleNumber}</h3>
         <div className="absolute bottom-3 right-3 flex items-center gap-1 text-sm opacity-90">
           <Clock className="h-4 w-4" />
@@ -38,7 +38,7 @@ export function ModuleCard({
           <span className="text-sm text-[#6B7280]">{lessonCount} leçons</span>
           <Link
             href={`/dashboard/module/${moduleId}/lesson/${firstLessonId}`}
-            className="font-medium text-[#2563EB] hover:underline"
+            className="font-medium text-primary hover:underline"
           >
             Commencer ▷
           </Link>

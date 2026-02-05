@@ -12,7 +12,7 @@ export default function BookingPage() {
       <header className="border-b border-[#E5E7EB] bg-white px-4 py-4">
         <div className="mx-auto flex max-w-4xl items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
-            <div className="flex h-10 w-10 items-center justify-center rounded-[10px] bg-[#2563EB] text-lg font-bold text-white">
+            <div className="flex h-10 w-10 items-center justify-center rounded-[10px] bg-primary text-lg font-bold text-white">
               AI
             </div>
             <span className="font-semibold text-[#111827]">BuildMaster</span>
@@ -35,7 +35,7 @@ export default function BookingPage() {
         <div className="mt-8 space-y-8">
           <BookingForm />
           <div className="rounded-xl border border-[#E5E7EB] bg-white p-4 shadow-sm sm:p-6">
-            <div className="flex items-center gap-2 text-[#2563EB]">
+            <div className="flex items-center gap-2 text-primary">
               <Calendar className="h-6 w-6" />
               <span className="font-medium">Ou choisir un créneau directement</span>
             </div>

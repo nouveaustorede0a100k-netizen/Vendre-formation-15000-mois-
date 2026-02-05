@@ -56,7 +56,7 @@ export function ModulesGrid() {
               key={i}
               className="rounded-xl border border-[#E5E7EB] bg-white p-6 shadow-sm transition-shadow hover:shadow-md"
             >
-              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-[#EFF6FF] text-[#2563EB]">
+              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-primary-light text-primary">
                 <mod.icon className="h-6 w-6" />
               </div>
               <h3 className="text-lg font-bold text-[#111827]">

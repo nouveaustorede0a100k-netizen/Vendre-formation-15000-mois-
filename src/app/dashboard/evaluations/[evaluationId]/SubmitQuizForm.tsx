@@ -96,7 +96,7 @@ export function SubmitQuizForm({
                     onChange={() =>
                       setAnswers((prev) => ({ ...prev, [q.id]: idx }))
                     }
-                    className="h-4 w-4 text-[#2563EB]"
+                    className="h-4 w-4 text-primary"
                   />
                   <span className="text-[#374151]">{opt.text}</span>
                 </label>

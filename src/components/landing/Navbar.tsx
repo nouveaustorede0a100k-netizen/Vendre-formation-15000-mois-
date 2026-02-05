@@ -16,10 +16,10 @@ export function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 w-full border-b border-[#E5E7EB] bg-white shadow-sm">
+    <header className="sticky top-0 z-40 w-full border-b border-[#E5E7EB] bg-[#F9FAFB] shadow-sm">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-2">
-          <div className="flex h-10 w-10 items-center justify-center rounded-[10px] bg-[#2563EB] text-lg font-bold text-white">
+          <div className="flex h-10 w-10 items-center justify-center rounded-[10px] bg-primary text-lg font-bold text-white">
             AI
           </div>
           <span className="hidden font-semibold text-[#111827] sm:inline">BuildMaster</span>
@@ -61,7 +61,7 @@ export function Navbar() {
       </nav>
 
       {mobileOpen && (
-        <div className="border-t border-[#E5E7EB] bg-white px-4 py-4 md:hidden">
+        <div className="border-t border-[#E5E7EB] bg-[#F9FAFB] px-4 py-4 md:hidden">
           <div className="flex flex-col gap-3">
             {navLinks.map((link) => (
               <a

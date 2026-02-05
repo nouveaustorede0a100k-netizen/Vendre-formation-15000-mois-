@@ -34,7 +34,7 @@ const plans = [
     cta: "Choisir Premium",
     variant: "primary" as const,
     recommended: true,
-    borderClass: "border-2 border-dashed border-[#2563EB]",
+    borderClass: "border-2 border-dashed border-primary",
   },
   {
     name: "Pro",
@@ -71,7 +71,7 @@ export function PricingSection() {
               className={`relative rounded-xl border bg-white p-6 ${plan.borderClass}`}
             >
               {plan.recommended && (
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-[#2563EB] px-4 py-1 text-sm font-medium text-white">
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-primary px-4 py-1 text-sm font-medium text-white">
                   Recommandé
                 </div>
               )}
@@ -84,7 +84,7 @@ export function PricingSection() {
               <ul className="mt-6 space-y-3">
                 {plan.features.map((f) => (
                   <li key={f} className="flex items-center gap-2 text-[15px] text-[#374151]">
-                    <Check className="h-5 w-5 flex-shrink-0 text-[#2563EB]" />
+                    <Check className="h-5 w-5 flex-shrink-0 text-primary" />
                     {f}
                   </li>
                 ))}

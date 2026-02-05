@@ -44,7 +44,7 @@ export function LessonSidebar({
       <h2 className="text-lg font-bold text-[#111827]">AI Build Master</h2>
       <Link
         href="/dashboard"
-        className="mt-2 block text-sm text-[#2563EB] hover:underline"
+        className="mt-2 block text-sm text-primary hover:underline"
       >
         ← Retour au tableau de bord
       </Link>
@@ -78,7 +78,7 @@ export function LessonSidebar({
                           className={cn(
                             "flex items-center justify-between rounded-lg px-3 py-2 text-sm",
                             isActive
-                              ? "border-l-2 border-[#2563EB] bg-[#EFF6FF] font-medium text-[#2563EB]"
+                              ? "border-l-2 border-primary bg-primary-light font-medium text-primary"
                               : "text-[#6B7280] hover:bg-[#F9FAFB]"
                           )}
                         >
@@ -86,7 +86,7 @@ export function LessonSidebar({
                             <span
                               className={cn(
                                 "inline-block h-2 w-2 rounded-full",
-                                isActive ? "bg-[#2563EB]" : "border border-[#9CA3AF] bg-transparent"
+                                isActive ? "bg-primary" : "border border-[#9CA3AF] bg-transparent"
                               )}
                             />
                             {lesson.title}

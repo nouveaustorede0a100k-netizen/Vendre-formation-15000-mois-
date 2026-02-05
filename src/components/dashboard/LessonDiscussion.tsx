@@ -76,7 +76,7 @@ export function LessonDiscussion({ lessonId }: { lessonId: string }) {
           onChange={(e) => setContent(e.target.value)}
           placeholder="Posez une question ou partagez un commentaire..."
           rows={3}
-          className="w-full rounded-xl border border-[#E5E7EB] px-4 py-3 text-[#111827] placeholder:text-[#9CA3AF] focus:border-[#2563EB] focus:outline-none focus:ring-1 focus:ring-[#2563EB]"
+          className="w-full rounded-xl border border-[#E5E7EB] px-4 py-3 text-[#111827] placeholder:text-[#9CA3AF] focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
         />
         <Button type="submit" variant="primary" size="sm" disabled={submitting}>
           {submitting ? "Envoi..." : "Publier"}
@@ -98,7 +98,7 @@ export function LessonDiscussion({ lessonId }: { lessonId: string }) {
                 className="rounded-lg border border-[#E5E7EB] bg-[#F9FAFB] p-4"
               >
                 <div className="flex items-center gap-3">
-                  <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#2563EB] text-xs font-bold text-white">
+                  <div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary text-xs font-bold text-white">
                     {getInitials(c.profiles?.full_name ?? undefined)}
                   </div>
                   <div>

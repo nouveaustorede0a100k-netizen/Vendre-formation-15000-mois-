@@ -43,7 +43,7 @@ export default async function DocumentsPage() {
               href={doc.file_url}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-[#6B7280] transition-colors hover:bg-[#EFF6FF] hover:text-[#2563EB]"
+              className="flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-[#6B7280] transition-colors hover:bg-primary-light hover:text-primary"
             >
               <Download className="h-4 w-4" />
               Télécharger

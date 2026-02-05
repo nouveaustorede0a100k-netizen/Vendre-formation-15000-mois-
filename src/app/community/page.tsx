@@ -13,12 +13,12 @@ export default function CommunityPage() {
       <header className="border-b border-[#E5E7EB] px-4 py-4">
         <div className="mx-auto flex max-w-3xl items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
-            <div className="flex h-10 w-10 items-center justify-center rounded-[10px] bg-[#2563EB] text-lg font-bold text-white">
+            <div className="flex h-10 w-10 items-center justify-center rounded-[10px] bg-primary text-lg font-bold text-white">
               AI
             </div>
             <span className="font-semibold text-[#111827]">BuildMaster</span>
           </Link>
-          <Link href="/" className="text-sm font-medium text-[#2563EB] hover:underline">
+          <Link href="/" className="text-sm font-medium text-primary hover:underline">
             Retour à l&apos;accueil
           </Link>
         </div>
@@ -39,7 +39,7 @@ export default function CommunityPage() {
               href={COMMUNITY_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-6 inline-block font-medium text-[#2563EB] hover:underline"
+              className="mt-6 inline-block font-medium text-primary hover:underline"
             >
               Rejoindre la communauté →
             </a>

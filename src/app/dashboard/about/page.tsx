@@ -17,7 +17,7 @@ export default function AboutPage() {
             Si vous avez besoin d&apos;aide, contactez le support technique à :{" "}
             <Link
               href="mailto:support@formation-ia.com"
-              className="text-[#2563EB] hover:underline"
+              className="text-primary hover:underline"
             >
               support@formation-ia.com
             </Link>

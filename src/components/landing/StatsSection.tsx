@@ -15,7 +15,7 @@ export function StatsSection() {
             key={stat.label}
             className="flex w-full max-w-xs flex-col items-center rounded-xl border border-[#E5E7EB] bg-white p-6 text-center"
           >
-            <stat.icon className="mb-3 h-8 w-8 text-[#2563EB]" />
+            <stat.icon className="mb-3 h-8 w-8 text-primary" />
             <span className="text-3xl font-extrabold text-[#111827]">
               {stat.value}
             </span>

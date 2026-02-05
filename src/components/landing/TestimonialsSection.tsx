@@ -11,7 +11,7 @@ const testimonials = [
   },
   {
     initials: "TM",
-    initialsColor: "#2563EB",
+    initialsColor: "var(--primary)",
     name: "Thomas Martin",
     role: "Entrepreneur Tech",
     quote:
@@ -27,7 +27,7 @@ const testimonials = [
   },
   {
     initials: "AC",
-    initialsColor: "#2563EB",
+    initialsColor: "var(--primary)",
     name: "Alex Chen",
     role: "Full-Stack Developer",
     quote:
@@ -35,7 +35,7 @@ const testimonials = [
   },
   {
     initials: "EW",
-    initialsColor: "#2563EB",
+    initialsColor: "var(--primary)",
     name: "Emma Wilson",
     role: "Product Manager",
     quote:
@@ -61,6 +61,17 @@ export function TestimonialsSection() {
         <p className="mx-auto mt-3 max-w-2xl text-center text-[#6B7280]">
           Découvrez ce que disent ceux qui ont suivi la formation
         </p>
+        <div className="mt-6 flex flex-wrap items-center justify-center gap-2 text-[#374151]">
+          <span className="text-sm font-medium">Avis vérifiés</span>
+          <span className="text-[#9CA3AF]">•</span>
+          <span className="text-sm font-medium">Excellent</span>
+          <div className="ml-2 flex items-center gap-1">
+            {[...Array(5)].map((_, i) => (
+              <Star key={i} className="h-5 w-5 fill-[#10B981] text-[#10B981]" />
+            ))}
+          </div>
+          <span className="text-lg font-bold text-[#111827]">4,8</span>
+        </div>
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {testimonials.map((t) => (
             <div
@@ -71,7 +82,7 @@ export function TestimonialsSection() {
                 {[...Array(5)].map((_, i) => (
                   <Star
                     key={i}
-                    className="h-5 w-5 fill-[#2563EB] text-[#2563EB]"
+                    className="h-5 w-5 fill-primary text-primary"
                   />
                 ))}
               </div>

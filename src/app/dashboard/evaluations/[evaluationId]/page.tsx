@@ -43,7 +43,7 @@ export default async function EvaluationQuizPage({
     <div>
       <Link
         href="/dashboard/evaluations"
-        className="mb-6 inline-block text-sm text-[#2563EB] hover:underline"
+        className="mb-6 inline-block text-sm text-primary hover:underline"
       >
         ← Retour aux évaluations
       </Link>

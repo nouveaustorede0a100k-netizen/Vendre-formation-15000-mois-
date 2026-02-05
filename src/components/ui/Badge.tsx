@@ -8,7 +8,7 @@ export function Badge({
 }: React.HTMLAttributes<HTMLSpanElement> & { variant?: "default" | "blue" | "pill" }) {
   const variants = {
     default: "bg-[#F3F4F6] text-[#374151]",
-    blue: "bg-[#2563EB] text-white",
+    blue: "bg-primary text-white",
     pill: "rounded-full bg-[#F3F4F6] text-[#374151] px-3 py-1 text-sm",
   };
   return (

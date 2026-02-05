@@ -76,11 +76,11 @@ export function FormationTimeline() {
           {timeline.map((module, idx) => (
             <div key={idx} className="relative flex gap-6 pb-12 last:pb-0">
               <div className="flex flex-shrink-0 flex-col items-center">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#2563EB] text-sm font-bold text-white">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-sm font-bold text-white">
                   {idx + 1}
                 </div>
                 {idx < timeline.length - 1 && (
-                  <div className="mt-2 h-full w-0.5 flex-1 bg-[#2563EB]" />
+                  <div className="mt-2 h-full w-0.5 flex-1 bg-primary" />
                 )}
               </div>
               <div className="min-w-0 flex-1 rounded-xl border border-[#E5E7EB] bg-white p-6">
@@ -91,7 +91,7 @@ export function FormationTimeline() {
                       key={i}
                       className="flex items-start gap-2 text-[15px] text-[#374151]"
                     >
-                      <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[#2563EB]" />
+                      <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary" />
                       {item}
                     </li>
                   ))}

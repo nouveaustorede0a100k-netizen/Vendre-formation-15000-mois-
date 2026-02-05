@@ -116,7 +116,7 @@ export default async function LessonPage({
       <div className="flex flex-1 flex-col overflow-y-auto bg-white">
         <div className="border-b border-[#E5E7EB] px-6 py-4">
           <nav className="text-sm text-[#6B7280]">
-            <Link href="/dashboard" className="text-[#2563EB] hover:underline">
+            <Link href="/dashboard" className="text-primary hover:underline">
               🏠
             </Link>
             <span className="mx-2">›</span>

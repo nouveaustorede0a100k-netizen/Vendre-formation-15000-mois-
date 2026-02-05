@@ -41,7 +41,7 @@ export default async function EvaluationsPage() {
               className="flex items-center justify-between rounded-xl border border-[#E5E7EB] bg-white p-6 shadow-sm"
             >
               <div className="flex items-start gap-4">
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#EFF6FF] text-[#2563EB]">
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary-light text-primary">
                   <Trophy className="h-6 w-6" />
                 </div>
                 <div>
@@ -61,7 +61,7 @@ export default async function EvaluationsPage() {
               </div>
               <Link
                 href={`/dashboard/evaluations/${ev.id}`}
-                className="flex items-center gap-1 rounded-lg px-4 py-2 text-sm font-medium text-[#2563EB] hover:bg-[#EFF6FF]"
+                className="flex items-center gap-1 rounded-lg px-4 py-2 text-sm font-medium text-primary hover:bg-primary-light"
               >
                 {result ? "Voir le quiz" : "Passer le quiz"}
                 <ChevronRight className="h-4 w-4" />

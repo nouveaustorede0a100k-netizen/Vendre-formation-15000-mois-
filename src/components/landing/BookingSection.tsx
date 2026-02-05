@@ -23,13 +23,13 @@ export function BookingSection() {
           </p>
           <ul className="mt-6 flex flex-col items-center gap-2 text-[#374151]">
             <li className="flex items-center gap-2">
-              <span className="text-[#2563EB]">✓</span> Sans engagement
+              <span className="text-primary">✓</span> Sans engagement
             </li>
             <li className="flex items-center gap-2">
-              <span className="text-[#2563EB]">✓</span> Conseils personnalisés
+              <span className="text-primary">✓</span> Conseils personnalisés
             </li>
             <li className="flex items-center gap-2">
-              <span className="text-[#2563EB]">✓</span> Réponse à toutes vos questions
+              <span className="text-primary">✓</span> Réponse à toutes vos questions
             </li>
           </ul>
           <Button
@@ -56,7 +56,7 @@ export function BookingSection() {
           />
           <p className="mt-4 text-center text-sm text-[#6B7280]">
             Ou visitez la page{" "}
-            <a href="/booking" className="text-[#2563EB] hover:underline">
+            <a href="/booking" className="text-primary hover:underline">
               Réservation
             </a>{" "}
             pour plus d&apos;options.
